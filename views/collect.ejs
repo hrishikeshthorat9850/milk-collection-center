@@ -5,37 +5,35 @@
   <title>दूध संकलन फॉर्म</title>
   <link rel="stylesheet" href="/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-</head>
+  <link rel="stylesheet" href="collect.css" />
 <body>
   <h1>🥛 दूध संकलन फॉर्म</h1>
-
-  <form action="/collect" method="POST" class="milk-form">
-    <label for="name">शेतकऱ्याचे नाव:</label>
-    <input type="text" id="name" name="name" required />
-  
-    <label for="date">दिनांक:</label>
-    <input type="date" id="date" name="date" required />
-  
-    <label for="type">दूध प्रकार:</label>
-    <select id="type" name="type">
-      <option value="गाय">गाय</option>
-      <option value="म्हैस">म्हैस</option>
-    </select>
-  
-    <label for="quantity">प्रमाण (लिटर):</label>
-    <input type="number" id="quantity" name="quantity" step="0.1" required />
-  
-    <label for="fat">फॅट:</label>
-    <input type="number" id="fat" name="fat" step="0.1" required />
-  
-    <label for="degree">डिग्री:</label>
-    <input type="number" id="degree" name="degree" step="0.1" required />
-  
-    <button type="submit">साठवा</button>
-  </form>
-  
-
+  <div class="milk-form-container">
+    <form action="/collect" method="POST" class="milk-form">
+      <label for="name">शेतकऱ्याचे नाव:</label>
+      <input type="text" id="name" name="name" required />
+    
+      <label for="date">दिनांक:</label>
+      <input type="date" id="date" name="date" required />
+    
+      <label for="type">दूध प्रकार:</label>
+      <select id="type" name="type">
+        <option value="गाय">गाय</option>
+        <option value="म्हैस">म्हैस</option>
+      </select>
+    
+      <label for="quantity">प्रमाण (लिटर):</label>
+      <input type="number" id="quantity" name="quantity" step="0.1" required />
+    
+      <label for="fat">फॅट:</label>
+      <input type="number" id="fat" name="fat" step="0.1" required />
+    
+      <label for="degree">डिग्री:</label>
+      <input type="number" id="degree" name="degree" step="0.1" required />
+    
+      <button type="submit">साठवा</button>
+    </form>
+  </div>
   <a href="/">⬅️ मुख्यपृष्ठ</a>
 </body>
 </html>
