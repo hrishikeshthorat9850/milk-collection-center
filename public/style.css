@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -89,4 +89,231 @@ body {
     padding: 0.5rem;
     font-size: 1rem;
   }
+   */
+/*...........................................................................................*/
+/* Modern 2025 look — for Marathi milk collection app */
+
+:root {
+    --primary-color: #4CAF50; /* Main green */
+    --secondary-color: #81C784; /* Light green */
+    --bg-gradient: linear-gradient(135deg, #e8f5e9, #ffffff);
+    --form-gradient: linear-gradient(135deg, #dcedc8, #f1f8e9);
+    --text-color: #212121;
+    --header-bg: linear-gradient(90deg, #388e3c, #81c784);
+    --footer-bg: #2e7d32;
+    --accent: #aed581;
+    --hover-color: #66bb6a;
+    --font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--bg-gradient);
+  }
+  
+  /* Header */
+  header {
+    background: var(--header-bg);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--form-gradient);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Headings */
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Form */
+  form.milk-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  form.milk-form label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+  
+  form.milk-form input,
+  form.milk-form select {
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    background-color: #fff;
+    color: var(--text-color);
+  }
+  
+  form.milk-form input:focus,
+  form.milk-form select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  }
+  
+  form.milk-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  form.milk-form button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.03);
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  table th, table td {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  table th {
+    background: var(--accent);
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  
+  table td {
+    background: #fafafa;
+  }
+  
+  table tr:hover {
+    background-color: #f1f8e9;
+  }
+  
+  /* Call-to-action Button */
+  .cta-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #2e7d32;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--footer-bg);
+    color: white;
+    margin-top: 3rem;
+  }
+  
+  /* Back Button */
+  button.back-btn {
+    background: #e0e0e0;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 2rem;
+    transition: background 0.3s ease;
+  }
+  
+  button.back-btn:hover {
+    background: #bdbdbd;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    form.milk-form input,
+    form.milk-form select,
+    form.milk-form button {
+      font-size: 1rem;
+    }
+  
+    table th, table td {
+      font-size: 0.95rem;
+      padding: 0.6rem;
+    }
+  }
+  
+
   

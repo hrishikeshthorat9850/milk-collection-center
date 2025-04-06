@@ -100,3 +100,6 @@ app.get('/summary', (req, res) => {
   res.send(html);
 });
 
+app.get('/', (req, res) => {
+  res.render('home');
+});
